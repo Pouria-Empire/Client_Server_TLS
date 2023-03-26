@@ -1,10 +1,13 @@
+import os
 from socket import create_connection,socket,AF_INET,SOCK_DGRAM
 from ssl import SSLContext, PROTOCOL_TLS_CLIENT
+#import sslkeylog
 
 ip = '127.0.0.1'
 port = 8442
 
 def senMessage(message,server_ip,server_port):
+    #sslkeylog.set_keylog(os.environ.get('SSLKEYLOGFILE'))
     hostname='localhost'
     ip = server_ip
     port = server_port
