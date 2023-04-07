@@ -22,5 +22,5 @@ say: "some data...", to: $IP:$PORT
 # Usage in Linux
 first run servertls.py, then run clienttls.py
 ```bash
-python3 <SCRIPT >.py
+python3 servertls.py && clienttls.py
 ```
